@@ -34,22 +34,27 @@
 
                     <p>Each time the game starts, the Jordans will change price.</p>
                 </div>
-                <div class="col">Annual Bonus:</div>
+                <div class="col">
+                    <button type="button" class="btn btn-success" id="bonus-button"> Get That Bonus </button><div id="bonus-amount"> $ </div>
+
+
+                </div>
                 <div class="w-100"></div>
                 <div id="ones" class="col">
-                    <img src="assets/images/jordan-1.png" width="325px" height="200px" />
+                
+                    <img src="assets/images/jordan-1.png" width="325px" height="200px" onclick="function()" />
                 </div>
                 <div id="fives" class="col">
-                    <img src="assets/images/jordan-5.png" width="325px" height="200px"/> </div>
+                    <img src="assets/images/jordan-5.png" width="325px" height="200px" onclick="startGame()" /> </div>
             </div>
             <div class="row">
                 <div id="fours" class="col">
-                    <img src="assets/images/jordan-4.png" width="340px" height="220px"/>
+                    <img src="assets/images/jordan-4.png" width="340px" height="220px" onclick="startGame()" />
                 </div>
                 <div id="twelves" class="col">
-                    <img src="assets/images/jordan-12.png" width="340px" height="220px"/>
+                    <img src="assets/images/jordan-12.png" width="340px" height="220px" onclick="startGame()" />
                 </div>
-                
+
                 <div class="w-100"></div>
                 <div class="col"> </div>
                 <div class="col"> </div>
@@ -60,11 +65,11 @@
         <!-- add alternate names for these -->
 
         <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-4">Total Spent: </h1>
-                    <!-- <h1 class="lead">Total Losses: </h1> -->
-                </div>
+            <div class="container">
+                <h1 class="display-4">Total Spent: </h1>
+                <!-- <h1 class="lead">Total Losses: </h1> -->
             </div>
+        </div>
 
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -73,17 +78,19 @@
             </div>
         </div>
         <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-4">Total Losses: </h1>
-                    <!-- <h1 class="lead">Total Losses: </h1> -->
-                </div>
+            <div class="container">
+                <h1 class="display-4">Total Losses: </h1>
+                <!-- <h1 class="lead">Total Losses: </h1> -->
             </div>
+        </div>
 
 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 
