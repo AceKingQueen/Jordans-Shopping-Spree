@@ -1,8 +1,17 @@
+body {
+    margin: 5%;
+}
+
+
 h1 {
     text-align: center;
 }
 
-#ones, #fives, #fours, #twelves {
+.shoe-image {
     margin: 2%;
 }
+
+
+
+
 

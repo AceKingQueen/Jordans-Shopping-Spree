@@ -16,12 +16,10 @@
     <div class="container-fluid">
 
 
-        <h1>Jordans Shopping Spree
-            <!-- <span class="badge badge-secondary">New</span> -->
-        </h1>
+        <h1>Jordans Shopping Spree</h1>
 
 
-        <div class="container">
+        <div class="intro">
             <div class="row">
                 <div class="col">
                     <p>Pick the right pair of Jordans for the amount of money you're about to receive from your annual bonus.</p>
@@ -34,52 +32,39 @@
 
                     <p>Each time the game starts, the Jordans will change price.</p>
                 </div>
-                <div class="col">
-                    <button type="button" class="btn btn-success" id="bonus-button"> Get That Bonus </button><div id="bonus-amount"> $ </div>
-
-
-                </div>
-                <div class="w-100"></div>
-                <div id="ones" class="col">
-                
-                    <img src="assets/images/jordan-1.png" width="325px" height="200px" onclick="function()" />
-                </div>
-                <div id="fives" class="col">
-                    <img src="assets/images/jordan-5.png" width="325px" height="200px" onclick="startGame()" /> </div>
+                <div class="bonus-col">
+                    <button type="button" class="btn btn-success" id="bonus-button"> Get That Bonus </button><div id="bonus-amount"><h4> $ </h4></div>
+                    
+                    <h4 class="clicks">Total Spent: </h4>
+                </div>        
             </div>
-            <div class="row">
-                <div id="fours" class="col">
-                    <img src="assets/images/jordan-4.png" width="340px" height="220px" onclick="startGame()" />
-                </div>
-                <div id="twelves" class="col">
-                    <img src="assets/images/jordan-12.png" width="340px" height="220px" onclick="startGame()" />
-                </div>
+   
+            <div class="shoe-row-1">
+                <button id="ones" class="shoe-image"><img src="assets/images/jordan-1.png" width="275px" height="160px" /></button>
 
-                <div class="w-100"></div>
-                <div class="col"> </div>
-                <div class="col"> </div>
-            </div>
+                <button id="fours" class="shoe-image"><img src="assets/images/jordan-4.png" width="275px" height="160px" /></button>
+            </div>    
 
-        </div>
+            <div class="shoe-row-2">
+                <button id="fives" class="shoe-image"><img src="assets/images/jordan-5.png" width="275px" height="160px" /></button>
+
+                <button id="twelves" class="shoe-image"><img src="assets/images/jordan-12.png" width="275px" height="160px" /></button>
+            </div>   
+
 
         <!-- add alternate names for these -->
 
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Total Spent: </h1>
-                <!-- <h1 class="lead">Total Losses: </h1> -->
-            </div>
-        </div>
+    
 
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">Total Wins: </h1>
+                <h1 class="wins">Total Wins: </h1>
                 <!-- <h1 class="lead">Total Losses: </h1> -->
             </div>
         </div>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">Total Losses: </h1>
+                <h1 class="losses">Total Losses: </h1>
                 <!-- <h1 class="lead">Total Losses: </h1> -->
             </div>
         </div>
@@ -95,3 +80,14 @@
 </body>
 
 </html>
+
+
+
+
+
+
+<!-- <div class=“w-100"></div>
+<div class=“col”> </div>
+<div class=“col”> </div>
+</div> -->
+
