@@ -20,7 +20,7 @@ var jordanPrice = [100, 10, 5, 1];
 $("#bonus-button").on("click", function() {
 
     //annual bonus given a random amount between 500 and 1000   
-    var annualBonus = Math.floor(Math.random() * 1000) + 500;
+    var annualBonus = Math.floor(Math.random() * 500) + 100;
     
     //annual bonus to appear on html
     $("#bonus-amount").append(annualBonus);
@@ -45,19 +45,17 @@ $("#bonus-button").on("click", function() {
         shoes.append(imageShoe);
     } 
 
+//make images clickable    
 shoes.on("click", ".shoe-image", function() {
 
-
-
-    //make images clickable
-    // $(".shoes").on("click", function() {
-
         var jordanCost = ($(this).attr("data-jordancost"));
+
         jordanCost = parseInt(jordanCost);
 
        counter += jordanCost; 
 
-       alert("New score: " + counter);
+       $("#runningtotal").text(counter);
+
        //checking to see if total amount is equal to annualBonus 
        if (counter === annualBonus) {
 

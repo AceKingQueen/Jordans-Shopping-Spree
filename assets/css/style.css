@@ -2,15 +2,18 @@ body {
     margin: 5%;
 }
 
-
 h1 {
     text-align: center;
 }
 
-.shoe-image {
-    margin: 2%;
+#bonus-amount {
+    color: green;
+    font-size: 22px;
 }
 
+.spent {
+    color: blue;
+}
 
 
 
