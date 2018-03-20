@@ -15,6 +15,11 @@ var shoes = $("#shoes");
 //each pair of Jordans given a number chosen from this array
 var jordanPrice = [100, 10, 5, 1];
 
+function startGame() {
+
+// $('body').on('click', 'p', function() {
+//     console.log("I get here!")
+// })
 
 //annual bonus given a random amount on click of button
 $("#bonus-button").on("click", function() {
@@ -77,9 +82,17 @@ shoes.on("click", ".shoe-image", function() {
 })
     })
 
+}
 
-    $("#win-total").value(5);
+    startGame() {
 
-    $("#loss-total").value(6);
+        $("#win-total").value();
+
+        $("#loss-total").value();
+
+    }
+
+
+
 
 
