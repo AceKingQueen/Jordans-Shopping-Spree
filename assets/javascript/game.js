@@ -12,7 +12,7 @@ var losses = 0;
 
 var shoes = $("#shoes");
 
-//each pair of Jordans given a random number chosen from this array
+//each pair of Jordans given a number chosen from this array
 var jordanPrice = [100, 10, 5, 1];
 
 
@@ -25,6 +25,8 @@ $("#bonus-button").on("click", function() {
     //annual bonus to appear on html
     $("#bonus-amount").append(annualBonus);
 
+
+    // var jordanPrice = Math.floor(Math.random() * 100) + 1;
 
     //for loop to assign values for each Jordan pair
     for (var j = 0; j < jordanPrice.length; j++) {
@@ -68,11 +70,16 @@ shoes.on("click", ".shoe-image", function() {
            alert("You lose");
            losses++;
        }
+
+      
     })
 
 })
     })
 
-$("#wintotal").text(wins);
 
-$("#losses").text(losses);
+    $("#win-total").value(5);
+
+    $("#loss-total").value(6);
+
+
