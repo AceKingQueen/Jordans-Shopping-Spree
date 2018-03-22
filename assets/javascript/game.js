@@ -15,10 +15,6 @@ var shoes = $("#shoes");
 //each pair of Jordans given a number chosen from this array
 var jordanPrice = [100, 10, 5, 1];
 
-//conditional that checks if you win or lose then add and display
-
-
-
 function gameReset() {
 // set counters to zero 
     counter = 0;
@@ -26,7 +22,7 @@ function gameReset() {
     $("#running-total").text(`$ ${counter}`);
 
     // set getthatcash to zero
-    $("#bonus-amount").text(`$0`)
+    $("#bonus-amount").text("zero")
 
     //total spent to zero
 
@@ -34,17 +30,15 @@ function gameReset() {
 
 //reassign values of buttons to rerandomize
 var annualBonus = Math.floor(Math.random() * 500) + 100;
+
 $("#bonus-amount").text(`$ ${annualBonus}`);
 
 }
 
-
 //button click to reset game back to zero
 $("#reset-button").on("click", function() {
-    
-    gameReset()
 
-    
+    gameReset()
 
 })
 
@@ -55,7 +49,7 @@ $("#bonus-button").on("click", function() {
     var annualBonus = Math.floor(Math.random() * 500) + 100;
     
     //annual bonus to appear on html
-    $("#bonus-amount").append(annualBonus);
+    $("#bonus-amount").text(`$ ${annualBonus}`);
 
 
     // var jordanPrice = Math.floor(Math.random() * 100) + 1;
@@ -119,6 +113,5 @@ shoes.on("click", ".shoe-image", function() {
   
 
 //hide play again button then once get that cash is pressed, hide get cash and show the play again
-//fix append and change to text
 
 
